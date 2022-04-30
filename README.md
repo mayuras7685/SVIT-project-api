@@ -5,14 +5,14 @@
 ![Logo](https://hirenlalani.files.wordpress.com/2022/04/wp-1651342540702.jpg)
 
 ## Problem Statment : 
-### In the fast paced and tech. driven world often times emotions are not openly shared or discussed
-### never even take the time to ask
-### How your child/student are filling ?
-### did you happy today ?
-### what would make tomorrow a better day for you ?
+#### In the fast paced and tech. driven world often times emotions are not openly shared or discussed
+#### never even take the time to ask
+#### How your child/student are filling ?
+#### did you happy today ?
+#### what would make tomorrow a better day for you ?
 
-### Those questions which should be asked on a regular basis and the happiness of your child/student should be constantly monitored.
-### and that's we come up with solution like 
+#### Those questions which should be asked on a regular basis and the happiness of your child/student should be constantly monitored.
+#### and that's we come up with solution like 
 
 # Devlopment of happiness index for schools(including mental health) with self-assessment facilities
 
