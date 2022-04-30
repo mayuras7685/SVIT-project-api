@@ -6,7 +6,7 @@
 
 ## Problem Statment : 
 ### In the fast paced and tech. driven world often times emotions are not openly shared or discussed
-### never even taje the time to ask
+### never even take the time to ask
 ### How your child/student are filling ?
 ### did you happy today ?
 ### what would make tomorrow a better day for you ?
