@@ -53,7 +53,7 @@ start my-project with npm
 
 - [@hiren14](https://github.com/hiren14/)
 
-- [@mayuras7685](https://github.com/mayuras7685/)
+- [@akashnai](https://github.com/akashnai/)
 ## Badges
 
 
