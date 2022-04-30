@@ -1,23 +1,30 @@
-const Author = require("./Author")
-const connectToMongo = require("./database")
-var express = require("express")
-const { db } = require("./Author")
+const express = require("express")
 const bp = require("body-parser")
 
-const users = []
-
+// const req = require("express/lib/request")
+// const res = require("express/lib/response")
 const app = express()
-app.use(bp.json)
 
-connectToMongo()
+app.use(bp.json())
+
+const users = [{
+  username:'keval',
+  password:'999'
+}]
+
+// connectToMongo()
+
 /* GET login page. */
-app.post("/login", function (req, res, next) {
-  const { username, password } = req.body
+app.post("/login", (req, res, next) => {
+  const userData = req.body
   var found = false
+  console.log('loging in')
 
   users.map((user) => {
-    if (user.username === username && user.password === password) {
+    console.log(user, userData)
+    if (user.username === userData.username && user.password === userData.password) {
       found = true
+      console.log('found')
       res.json("0")
     }
   })
@@ -26,20 +33,16 @@ app.post("/login", function (req, res, next) {
   }
   // res.send("../pages/Login.js", { title: "Login" })
 })
-/* GET login page. */
-app.get("/register", async (req, res, next) => {
-  const { username, email, password } = req.body
 
-  users.push({ username: username, email: email, password: password })
-  // const data = {
-  //   username: req.body.username,
-  // }
-  // try {
-  //   // res.render("../pages/Register.js", { title: "Register" })
-  //   const promise = await Author.insertOne(data)
-  //   res.send(JSON.parse(promise))
-  // } catch (error) {
-  //   console.log(error)
-  // }
-})
-app.listen(4000)
+/* register routes. */
+app.post("/register", (req, res) => {
+  const { username, email, password } = req.body.userData;
+  
+  users.push({username:username,email:email,password:password})
+
+  console.log('registered')
+  res.json('0')
+});
+
+
+app.listen(3005)
